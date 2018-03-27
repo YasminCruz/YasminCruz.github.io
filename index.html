@@ -1,1 +1,229 @@
-hello world!
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Yasmin Cruz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="./assets/js/turn.js"></script>
+		<style>
+
+			#magazinediv {
+				display: flex;
+				position: fixed;
+				top: 20%;
+				width: 1080px;
+				height: 600px;
+			}
+		</style>
+		<style>
+body{
+    overflow:hidden;
+}
+
+#flipbook{
+    width: 1080px;
+	height: 600px;
+}
+
+#flipbook .page{
+    width: 1080px;
+	height: 600px;
+    background-color:white;
+    line-height:800px;
+    font-size:20px;
+    text-align:center;
+}
+
+/*#flipbook .page-wrapper{*/
+/*    -webkit-perspective:1000px;*/
+/*    -moz-perspective:1000px;*/
+/*    -ms-perspective:1000px;*/
+/*    -o-perspective:1000px;*/
+/*    perspective:1000px;*/
+/*}*/
+
+#flipbook .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+}
+
+
+
+
+			</style>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/profile_square.jpeg" alt="" style="width: 160px; height: 160px;"/></span>
+							<h1>Yasmin Cruz</h1>
+							<p>Graduanda em Designer Gráfico</p>
+						</header>
+						<!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="sales">Sales</option>
+										<option value="tech">Tech Support</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+							</div>
+							<div class="field">
+								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+							</div>
+							<div class="field">
+								<label>But are you a robot?</label>
+								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+							</div>
+							<ul class="actions">
+								<li><a href="#" class="button">Get Started</a></li>
+							</ul>
+						</form>
+						<hr />
+						-->
+						<footer>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/yasminlcruz" class="fa-linkedin">Twitter</a></li>
+								<li><a href="https://www.instagram.com/mrsyasmincruz" class="fa-instagram">Instagram</a></li>
+								<li><a href="https://www.facebook.com/yasmin.lopes.963434" class="fa-facebook">Facebook</a></li>
+							</ul>
+							<button onclick="openMagazine()" style="height: 60px; width: 200px; padding-top: 10px; padding-bottom: 10px">
+								<p style="font-size: 16pt">Ver Portfolio</p>
+							</button>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Yasmin Cruz</li><li>Template from: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+					<div id="magazinediv" style="justify-content: center; flex-direction: column; align-items: center">
+
+							<div id="flipbook">
+									<div class="hard"> Yasmin's Portfolio </div> 
+									<div class="hard"></div>
+									<div class="hard"> <img src="./images/foto1.jpg"/> </div>
+									<div class="hard"> <img src="./images/foto2.jpg"/> </div>
+									<div class="hard"> <img src="./images/foto3.jpg"/> </div>
+									<div class="hard"> <img src="./images/foto4.jpg"/> </div>
+									<div class="hard"> <img src="./images/foto5.jpg"/> </div>
+									<div class="hard"> <img src="./images/foto6.jpg"/> </div>
+									<div class="hard"></div>
+									<div class="hard"></div>
+								</div>
+								<button onclick="closeMagazine()" style="background: white; height: 60px; width: 200px; padding-top: 10px; padding-bottom: 10px">
+									<p style="font-size: 16pt">Fechar Portfolio</p>
+								</button>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+		
+		
+		<script type="text/javascript">
+			$("#flipbook")
+				.turn({
+					
+					gradients: true, 
+					acceleration: true,
+					width: 1080,
+					height: 600
+				});
+
+			function openMagazine() {
+				$("#magazinediv")[0]
+					.style.display = 'flex';
+			}
+			function closeMagazine() {
+				$("#magazinediv")[0]
+					.style.display = 'none';
+			}
+			$("#magazinediv")[0]
+					.style.display = 'none';
+		</script>
+		<!-- <div id="magazine">
+			<div><span class="text">Page 1</span></div>
+			<div><span class="text">Page 2</span></div>
+			<div><span class="text">Page 3</span></div>
+		</div>
+		<script>$('#magazine').turn({gradients: true, acceleration: true});</script> -->
+
+	</body>
+</html>
